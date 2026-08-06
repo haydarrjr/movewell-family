@@ -1,0 +1,20 @@
+name: "Movewell Family Movement Health"
+version: "1.0.0"
+slug: "movewell_family"
+description: "AI-powered family physical rehabilitation, movement health, and posture tracking engine"
+url: "https://github.com/movewell-family/movewell-family"
+arch:
+  - aarch64
+  - amd64
+  - armv7
+startup: application
+boot: auto
+options:
+  environment: "production"
+  port: 8000
+schema:
+  environment: str
+  port: int
+ports:
+  8000/tcp: 8000
+  2091/tcp: 2091
