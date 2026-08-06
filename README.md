@@ -25,19 +25,19 @@
 
 ```mermaid
 flowchart LR
-    subgraph Privacy Boundary (Local Hardware)
-        A[Pose Keypoints / Camera] --> B[Movewell Vision MCP Service]
-        B -->|Joint Vectors| C[Movewell Engine FastAPI]
-        D[Family Health Profiles] --> C
+    subgraph "Privacy Boundary (Local Hardware)"
+        A["Pose Keypoints / Camera"] --> B["Movewell Vision MCP Service"]
+        B -->|"Joint Vectors"| C["Movewell Engine FastAPI"]
+        D["Family Health Profiles"] --> C
     end
     
-    subgraph Safety & Recommendation
-        C --> E{Clinical Safety Hardguard}
-        E -->|Passed| F[Adaptive Movement Protocol]
-        E -->|Blocked / High Pain| G[Restorative Passive Protocol]
+    subgraph "Safety & Recommendation"
+        C --> E{"Clinical Safety Hardguard"}
+        E -->|"Passed"| F["Adaptive Movement Protocol"]
+        E -->|"Blocked / High Pain"| G["Restorative Passive Protocol"]
     end
 
-    F --> H[Home Assistant Sensors & Dashboard]
+    F --> H["Home Assistant Sensors & Dashboard"]
     G --> H
 ```
 

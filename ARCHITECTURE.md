@@ -6,12 +6,12 @@ Movewell Family is designed as a decoupled, privacy-centric open-source movement
 
 ```mermaid
 flowchart TD
-    A[Family Member / User] -->|Movement Data & Posture| B[Movewell Vision Service - Node/TS]
-    B -->|MCP Posture Metrics & Pose Vector| C[Movewell Engine - Python FastAPI]
-    C -->|Domain Evaluation| D{Clinical Safety Hardguard}
-    D -->|Pass| E[Adaptive Rehab & Coaching Generator]
-    D -->|Block / Quarantine| F[Safety Alert & Modified Protocol]
-    E -->|Sync Plan| G[Home Assistant Add-on / Hevy Sync]
+    A["Family Member / User"] -->|"Movement Data & Posture"| B["Movewell Vision Service (Node/TS)"]
+    B -->|"MCP Posture Metrics & Pose Vector"| C["Movewell Engine (Python FastAPI)"]
+    C -->|"Domain Evaluation"| D{"Clinical Safety Hardguard"}
+    D -->|"Pass"| E["Adaptive Rehab & Coaching Generator"]
+    D -->|"Block / Quarantine"| F["Safety Alert & Modified Protocol"]
+    E -->|"Sync Plan"| G["Home Assistant Add-on / Hevy Sync"]
 ```
 
 ## Core Components
