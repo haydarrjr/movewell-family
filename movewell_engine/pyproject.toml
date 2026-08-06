@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "movewell-engine"
+version = "1.0.0"
+description = "AI-powered family physical rehabilitation & movement health engine"
+readme = "../README.md"
+requires-python = ">=3.10"
+authors = [
+    { name = "Movewell Family Open Source Community" }
+]
+dependencies = [
+    "fastapi>=0.100.0",
+    "uvicorn>=0.22.0",
+    "pydantic>=2.0.0",
+    "pydantic-settings>=2.0.0",
+    "httpx>=0.24.0"
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.3.0",
+    "pytest-asyncio>=0.21.0"
+]
